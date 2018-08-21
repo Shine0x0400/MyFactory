@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="79dp"
+        android:text="输入验证码"
+        android:textColor="#cc000000"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="8dp"
+        android:textColor="#96000000"
+        android:textSize="12sp" />
+
+    <FrameLayout
+        android:id="@+id/fl_captcha_container"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_tip"
+        tools:background="#f0f">
+
+        <com.zjl.uikit.inputcodeview.InputCodeView
+            android:id="@+id/verificationcodeview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

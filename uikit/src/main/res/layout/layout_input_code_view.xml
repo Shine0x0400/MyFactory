@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    tools:parentTag="android.support.constraint.ConstraintLayout">
+
+    <com.zjl.uikit.inputcodeview.SoftKeyEditText
+        android:id="@+id/et1"
+        style="@style/InputCodeViewEditText"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/et2" />
+
+    <com.zjl.uikit.inputcodeview.SoftKeyEditText
+        android:id="@+id/et2"
+        style="@style/InputCodeViewEditText"
+        app:layout_constraintLeft_toRightOf="@id/et1"
+        app:layout_constraintRight_toLeftOf="@+id/et3" />
+
+    <com.zjl.uikit.inputcodeview.SoftKeyEditText
+        android:id="@+id/et3"
+        style="@style/InputCodeViewEditText"
+        app:layout_constraintLeft_toRightOf="@id/et2"
+        app:layout_constraintRight_toLeftOf="@+id/et4" />
+
+    <com.zjl.uikit.inputcodeview.SoftKeyEditText
+        android:id="@+id/et4"
+        style="@style/InputCodeViewEditText"
+        app:layout_constraintLeft_toRightOf="@id/et3"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</merge>
